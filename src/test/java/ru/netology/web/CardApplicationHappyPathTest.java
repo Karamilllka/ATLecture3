@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CardApplicationHappyPathTest {
@@ -18,7 +19,7 @@ public class CardApplicationHappyPathTest {
     @BeforeAll
     static void setUpAll() {
 
-        WebDriverManager.chromedriver().setup();
+        chromedriver().setup();
     }
 
     @BeforeEach
