@@ -19,7 +19,7 @@ public class CardApplicationHappyPathTest {
     @BeforeAll
     static void setUpAll() {
 
-        chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
